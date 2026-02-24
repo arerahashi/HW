@@ -13,11 +13,9 @@ JOIN dbo.branches b
 JOIN dbo.order_statuses s
     ON s.status_id = o.status_id
 WHERE
-    s.status_name = N'Âûäàí'
+    s.status_name = N'Ã‚Ã»Ã¤Ã Ã­'
     AND o.finished_at >= DATEFROMPARTS(YEAR(GETDATE()), MONTH(GETDATE()), 1)
     AND o.finished_at <  DATEADD(MONTH, 1, DATEFROMPARTS(YEAR(GETDATE()), MONTH(GETDATE()), 1))
 GROUP BY
     b.branch_id, b.branch_code, b.address, o.currency
 
-
-	
