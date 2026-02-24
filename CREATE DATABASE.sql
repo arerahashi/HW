@@ -1,6 +1,5 @@
 /*CREATE DATABASE HW_CashOrderService;
 GO*/
-
 USE HW_CashOrderService;
 GO
 
@@ -88,3 +87,4 @@ CREATE TABLE notifications (
     CONSTRAINT FK_notifications_channels 
         FOREIGN KEY (channel_id) REFERENCES notification_channels(channel_id)
 );
+
